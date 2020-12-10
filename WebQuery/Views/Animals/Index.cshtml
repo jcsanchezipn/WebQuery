@@ -1,0 +1,20 @@
+﻿@model List<SelectListItem>
+
+<h3>Listado de animales</h3>
+<h6>Listas dependientes</h6>
+
+
+<div class="row">
+    <div class="col-lg-6">
+        Clases de animales
+        @Html.DropDownList("AnimasClass",Model, new { @class = "form-control", id = "AnimasClass" })
+    
+    </div>
+
+    <div class="col-lg-6">
+        Animales que pertencen
+        <select id="animal" name="animal" class="form-control"></select>
+</div>
+
+</div>
+
